@@ -17,7 +17,7 @@ Thereafter;
 FUNCTIONS
 ---------
 
-####lib\_mysqludf\_fPROJ4\_info()####
+###lib\_mysqludf\_fPROJ4\_info()###
 
 Function takes no argument and return the library version of the itself and the PROJ4 library version used in the system as single string.
 Usage:
@@ -31,7 +31,7 @@ SELECT lib_mysqludf_fPROJ4_info();
 +---------------------------------------------------------------------------------+
 ```
 
-####fPROJ4\_Geo2UTM (REAL x, REAL y, INT zone, INT compenant\_to\_return)####
+###fPROJ4\_Geo2UTM (REAL x, REAL y, INT zone, INT compenant\_to\_return)###
 
 Function takes 4 arguments and transfers the input from Geographic Coordinate System to UTM. 
 
@@ -54,7 +54,7 @@ SELECT
 +---------------+----------------+
 ```
 
-####fPROJ4\_UTM2Geo (REAL x, REAL y, INT zone, INT compenant\_to\_return)####
+###fPROJ4\_UTM2Geo (REAL x, REAL y, INT zone, INT compenant\_to\_return)###
 
 Function takes 4 arguments and transfers the input from UTM to Geographic Coordinate System. 
 
@@ -77,7 +77,7 @@ SELECT
 +---------------+----------------+
 ```
 
-####fPROJ4\_transform (REAL x, REAL y, REAL z, STRING projection\_from, STRING projection\_to, INT compenant\_to\_return)####
+###fPROJ4\_transform (REAL x, REAL y, REAL z, STRING projection\_from, STRING projection\_to, INT compenant\_to\_return)###
 
 *This is an advanced function for projecting anything to anything. You can change the elipsoid, datum etc. USE IT WITH CARE AND READ THE PROJ4 DOCUMENTATION.*
 
